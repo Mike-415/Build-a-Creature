@@ -17,7 +17,7 @@ namespace cs_creature{
         int damage = Creature::getDamage();
         if (rand() % 4 == 0) {
             damage = damage + 50;
-            std::cout << "Demonic attack inflicts 50 additional damage points!" << std::endl;
+            //std::cout << "Demonic attack inflicts 50 additional damage points!" << std::endl;
         }
         return damage;
     }

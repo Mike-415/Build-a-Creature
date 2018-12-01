@@ -10,11 +10,11 @@
  */
 namespace cs_creature{
     class Human: public Creature {
-    public:
-        Human();
-        Human(int newStrength, int newHitpoints);
-        int getDamage() const;
-        std::string getSpecies() const;
+        public:
+            Human();
+            Human(int newStrength, int newHitpoints);
+            //int getDamage() const;
+            std::string getSpecies() const;
     };
 }
 

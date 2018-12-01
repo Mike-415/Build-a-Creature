@@ -13,9 +13,10 @@ namespace cs_creature{
     :Creature(newStrength, newHitpoints) {
     }
 
-    int Human::getDamage() const {
-        return Creature::getDamage();
-    }
+
+//    int Human::getDamage() const {
+//        return Creature::getDamage();
+//    }
 
     std::string Human::getSpecies() const {
         return "Human";

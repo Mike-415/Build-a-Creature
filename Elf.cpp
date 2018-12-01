@@ -16,7 +16,7 @@ namespace cs_creature{
          //Elves inflict double magical damage with a 50% chance
          int damage = Creature::getDamage();
          if ((rand() % 2) == 0) {
-             std::cout << "Magical attack inflicts " << damage << " additional damage points!" << std::endl;
+             //std::cout << "Magical attack inflicts " << damage << " additional damage points!" << std::endl;
              damage *= 2;
          }
         return damage;

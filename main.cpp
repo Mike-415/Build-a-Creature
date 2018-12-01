@@ -1,20 +1,70 @@
 #include <iostream>
-#include "DerivedClass.h"
-
-using namespace inheritance;
-using namespace inheritance2;
+#include "Human.h"
+#include "Elf.h"
+#include "Cyberdemon.h"
+#include "Balrog.h"
+using namespace cs_creature;
+using namespace std;
 
 int main() {
-    BaseClass b;
-    DerivedClass d;
-    std::cout << "DEFAULT CONSTRUCTORS: " << std::endl;
-    std::cout << "\tb: " << b.getArg1() << std::endl << std::endl;
-    std::cout << "\td.getArg1: " << d.getArg1() << std::endl;
-    std::cout << "\td.getArg2: " << d.getArg2() << std::endl;
-    BaseClass b2(44);
-    DerivedClass d2(11, 22);
-    std::cout << "OTHER CONSTRUCTORS: " << std::endl;
-    std::cout << "\tb2: " << b2.getArg1() << std::endl << std::endl;
-    std::cout << "\td2.getArg1: " << d2.getArg1() << std::endl;
-    std::cout << "\td2.getArg2: " << d2.getArg2() << std::endl;
+    srand(static_cast<unsigned>(time(0)));
+
+    Human h1;
+    Elf e1;
+    Cyberdemon c1;
+    Balrog b1;
+
+    Human h(20, 30);
+    Elf e(40, 50);
+    Cyberdemon c(60, 70);
+    Balrog b(80, 90);
+
+
+    cout << "default Human strength/hitpoints: " << h1.getStrength() << "/" << h1.getHitpoints() << endl;
+    cout << "default Elf strength/hitpoints: " << e1.getStrength() << "/" << e1.getHitpoints() << endl;
+    cout << "default Cyberdemon strength/hitpoints: " << c1.getStrength() << "/" << c1.getHitpoints() << endl;
+    cout << "default Balrog strength/hitpoints: " << b1.getStrength() << "/" << b1.getHitpoints() << endl;
+    cout << "non-default Human strength/hitpoints: " << h.getStrength() << "/" << h.getHitpoints() << endl;
+    cout << "non-default Elf strength/hitpoints: " << e.getStrength() << "/" << e.getHitpoints() << endl;
+    cout << "non-default Cyberdemon strength/hitpoints: " << c.getStrength() << "/" << c.getHitpoints() << endl;
+    cout << "non-default Balrog strength/hitpoints: " << b.getStrength() << "/" << b.getHitpoints() << endl;
+    cout << endl << endl;
+
+    cout << "Examples of " << h.getSpecies() << " damage: " << endl;
+    for (int i = 0; i < 10; i++){
+        int damage = h.getDamage();
+        cout << " Total damage = " << damage << endl;
+        cout << endl;
+    }
+    cout << endl;
+
+
+
+    cout << "Examples of " << e.getSpecies() << " damage: " << endl;
+    for (int i = 0; i < 10; i++){
+        int damage = e.getDamage();
+        cout << " Total damage = " << damage << endl;
+        cout << endl;
+    }
+    cout << endl;
+
+
+
+    cout << "Examples of " << c.getSpecies() << " damage: " << endl;
+    for (int i = 0; i < 10; i++){
+        int damage = c.getDamage();
+        cout << " Total damage = " << damage << endl;
+        cout << endl;
+    }
+    cout << endl;
+
+
+
+    cout << "Examples of " << b.getSpecies() << " damage: " << endl;
+    for (int i = 0; i < 10; i++){
+        int damage = b.getDamage();
+        cout << " Total damage = " << damage << endl;
+        cout << endl;
+    }
+    cout << endl;
 }
