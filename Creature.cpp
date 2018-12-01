@@ -40,14 +40,4 @@ namespace cs_creature{
         hitpoints = newHitpoints;
     }
 
-    string Creature::getSpecies() const {
-        return "Creature";
-//        switch (type) {
-//            case 0: return "Human";
-//            case 1: return "Cyberdemon";
-//            case 2: return "Balrog";
-//            case 3: return "Elf";
-//        }
-//        return "unknown";
-    }
 }

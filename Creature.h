@@ -101,7 +101,7 @@ namespace cs_creature{
             // QUESTION: For the header and implementation file
             // function signatures, where do you need to use
             // the 'virtual' keyword???
-            virtual std::string getSpecies() const;
+            virtual std::string getSpecies() const  = 0;
     };
 }
 #endif //INHERITANCE_CREATURE_H
