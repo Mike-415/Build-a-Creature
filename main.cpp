@@ -1,4 +1,6 @@
 #include <iostream>
+#include <ctime>
+#include <cstdlib>
 #include "Human.h"
 #include "Elf.h"
 #include "Cyberdemon.h"
@@ -6,65 +8,56 @@
 using namespace cs_creature;
 using namespace std;
 
+void battleArena(Creature& creature1, Creature& creature2);
+void displayWinner(Creature& creature1, Creature& creature2);
+
 int main() {
     srand(static_cast<unsigned>(time(0)));
 
-    Human h1;
-    Elf e1;
-    Cyberdemon c1;
-    Balrog b1;
+    // Creatures: Humans, Elves, Cyberdemons, Balrogs
+    // Battle 1:
+    Elf e(10,100);
+    Balrog b(10,100);
+    battleArena(e, b);
 
-    Human h(20, 30);
-    Elf e(40, 50);
-    Cyberdemon c(60, 70);
-    Balrog b(80, 90);
+    // Battle 2:
+    Cyberdemon c(10,100);
+    Human h(10,100);
+    battleArena(c, h);
+
+}
 
 
-    cout << "default Human strength/hitpoints: " << h1.getStrength() << "/" << h1.getHitpoints() << endl;
-    cout << "default Elf strength/hitpoints: " << e1.getStrength() << "/" << e1.getHitpoints() << endl;
-    cout << "default Cyberdemon strength/hitpoints: " << c1.getStrength() << "/" << c1.getHitpoints() << endl;
-    cout << "default Balrog strength/hitpoints: " << b1.getStrength() << "/" << b1.getHitpoints() << endl;
-    cout << "non-default Human strength/hitpoints: " << h.getStrength() << "/" << h.getHitpoints() << endl;
-    cout << "non-default Elf strength/hitpoints: " << e.getStrength() << "/" << e.getHitpoints() << endl;
-    cout << "non-default Cyberdemon strength/hitpoints: " << c.getStrength() << "/" << c.getHitpoints() << endl;
-    cout << "non-default Balrog strength/hitpoints: " << b.getStrength() << "/" << b.getHitpoints() << endl;
-    cout << endl << endl;
 
-    cout << "Examples of " << h.getSpecies() << " damage: " << endl;
-    for (int i = 0; i < 10; i++){
-        int damage = h.getDamage();
-        cout << " Total damage = " << damage << endl;
-        cout << endl;
+
+
+
+void battleArena(Creature& creature1, Creature& creature2){
+    std::cout << std::endl << std::endl;
+    while(creature1.getHitpoints() > 0 && creature2.getHitpoints() > 0){
+
+        creature1.setHitpoints( creature1.getHitpoints() - creature2.getDamage() );
+        std::cout << "\t" << creature1.getSpecies() << " hitpoints: " << creature1.getHitpoints() << endl;
+
+        creature2.setHitpoints( creature2.getHitpoints() - creature1.getDamage() );
+        std::cout << "\t" << creature2.getSpecies() << " hitpoints: " << creature2.getHitpoints() << endl;
     }
-    cout << endl;
+    displayWinner(creature1, creature2);
+}
 
 
 
-    cout << "Examples of " << e.getSpecies() << " damage: " << endl;
-    for (int i = 0; i < 10; i++){
-        int damage = e.getDamage();
-        cout << " Total damage = " << damage << endl;
-        cout << endl;
+
+
+
+
+void displayWinner(Creature& creature1, Creature& creature2){
+    std::cout << std::endl;
+    if(creature1.getHitpoints() > 0) {
+        std::cout << creature1.getSpecies() << " won with " << creature1.getHitpoints() << " hitpoints left\n\n" << std::endl;
+    } else if(creature2.getHitpoints() > 0) {
+        std::cout << creature2.getSpecies() << " won with " << creature2.getHitpoints() << " hitpoints left\n\n" << std::endl;
+    } else {
+        std::cout << "Both creatures died.  Tie game\n\n" << std::endl;
     }
-    cout << endl;
-
-
-
-    cout << "Examples of " << c.getSpecies() << " damage: " << endl;
-    for (int i = 0; i < 10; i++){
-        int damage = c.getDamage();
-        cout << " Total damage = " << damage << endl;
-        cout << endl;
-    }
-    cout << endl;
-
-
-
-    cout << "Examples of " << b.getSpecies() << " damage: " << endl;
-    for (int i = 0; i < 10; i++){
-        int damage = b.getDamage();
-        cout << " Total damage = " << damage << endl;
-        cout << endl;
-    }
-    cout << endl;
 }

@@ -1,7 +1,3 @@
-//
-// Created by Michael Gonzalez on 11/29/18.
-//
-
 #ifndef INHERITANCE_DEMON_H
 #define INHERITANCE_DEMON_H
 

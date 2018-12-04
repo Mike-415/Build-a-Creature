@@ -15,8 +15,6 @@ namespace cs_creature{
     }
 
     int Balrog::getDamage() const {
-        // Balrogs are so fast they get to attack twice
-        //std::cout << "The Balrog" << std::endl;
         int damage = Demon::getDamage();
         int additionalDamage = (rand() % Demon::getStrength()) + 1;
         std::cout << "Balrog speed attack inflicts " << additionalDamage << " additional damage points!" << std::endl;

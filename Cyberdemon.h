@@ -10,7 +10,6 @@ namespace cs_creature{
         public:
             Cyberdemon();
             Cyberdemon(int newStrength, int newHitpoints);
-            //int getDamage() const;
             std::string getSpecies() const;
     };
 }

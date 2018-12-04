@@ -6,41 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/michaelgonzalez/CLionProjects/Inheritance/Balrog.cpp
-Balrog.h
 /Users/michaelgonzalez/CLionProjects/Inheritance/Balrog.h
 Demon.h
 /Users/michaelgonzalez/CLionProjects/Inheritance/Demon.h
 
-/Users/michaelgonzalez/CLionProjects/Inheritance/Balrog.h
-Demon.h
-/Users/michaelgonzalez/CLionProjects/Inheritance/Demon.h
-
-/Users/michaelgonzalez/CLionProjects/Inheritance/Creature.cpp
-Creature.h
 /Users/michaelgonzalez/CLionProjects/Inheritance/Creature.h
-iostream
+ctime
 -
-string
+cstdlib
 -
-
-/Users/michaelgonzalez/CLionProjects/Inheritance/Creature.h
 string
 -
 iostream
 -
 
-/Users/michaelgonzalez/CLionProjects/Inheritance/Cyberdemon.cpp
-Cyberdemon.h
 /Users/michaelgonzalez/CLionProjects/Inheritance/Cyberdemon.h
-Demon.h
-/Users/michaelgonzalez/CLionProjects/Inheritance/Demon.h
-
-/Users/michaelgonzalez/CLionProjects/Inheritance/Cyberdemon.h
-Demon.h
-/Users/michaelgonzalez/CLionProjects/Inheritance/Demon.h
-
-/Users/michaelgonzalez/CLionProjects/Inheritance/Demon.cpp
 Demon.h
 /Users/michaelgonzalez/CLionProjects/Inheritance/Demon.h
 
@@ -48,17 +28,9 @@ Demon.h
 Creature.h
 /Users/michaelgonzalez/CLionProjects/Inheritance/Creature.h
 
-/Users/michaelgonzalez/CLionProjects/Inheritance/Elf.cpp
-Elf.h
-/Users/michaelgonzalez/CLionProjects/Inheritance/Elf.h
-
 /Users/michaelgonzalez/CLionProjects/Inheritance/Elf.h
 Creature.h
 /Users/michaelgonzalez/CLionProjects/Inheritance/Creature.h
-
-/Users/michaelgonzalez/CLionProjects/Inheritance/Human.cpp
-Human.h
-/Users/michaelgonzalez/CLionProjects/Inheritance/Human.h
 
 /Users/michaelgonzalez/CLionProjects/Inheritance/Human.h
 Creature.h
@@ -66,6 +38,10 @@ Creature.h
 
 /Users/michaelgonzalez/CLionProjects/Inheritance/main.cpp
 iostream
+-
+ctime
+-
+cstdlib
 -
 Human.h
 /Users/michaelgonzalez/CLionProjects/Inheritance/Human.h

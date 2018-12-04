@@ -1,7 +1,3 @@
-//
-// Created by Michael Gonzalez on 11/29/18.
-//
-
 #ifndef INHERITANCE_ELF_H
 #define INHERITANCE_ELF_H
 #include "Creature.h"
@@ -15,7 +11,4 @@ namespace cs_creature{
             std::string getSpecies() const;
     };
 }
-
-
-
 #endif //INHERITANCE_ELF_H

@@ -1,7 +1,3 @@
-//
-// Created by Michael Gonzalez on 11/29/18.
-//
-
 #include "Creature.h"
 #include <iostream>
 #include <string>

@@ -14,12 +14,6 @@ namespace cs_creature{
     :Demon(newStrength, newHitpoints){
     }
 
-//    int Cyberdemon::getDamage() const {
-//        //std::cout << "The Cyberdemon" << std::endl;
-//        int damage = Demon::getDamage();
-//        return damage;
-//
-//    }
 
     std::string Cyberdemon::getSpecies() const {
         return "Cyberdemon";

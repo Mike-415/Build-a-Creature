@@ -1,7 +1,3 @@
-//
-// Created by Michael Gonzalez on 11/29/18.
-//
-
 #ifndef INHERITANCE_BALROG_H
 #define INHERITANCE_BALROG_H
 #include "Demon.h"
