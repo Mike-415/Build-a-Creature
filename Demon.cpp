@@ -4,9 +4,20 @@ namespace cs_creature{
     Demon::Demon(){
 
     }
+
+
+
+
+
+
     Demon::Demon(int newStrength, int newHitpoints)
             :Creature(newStrength, newHitpoints){
     }
+
+
+
+
+
 
     int Demon::getDamage() const{
         // Demons can inflict damage of 50 with a 25% chance
@@ -17,6 +28,11 @@ namespace cs_creature{
         }
         return damage;
     }
+
+
+
+
+
 
     std::string Demon::getSpecies() const{
         return "Demon";

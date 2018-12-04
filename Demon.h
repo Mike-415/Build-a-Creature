@@ -12,6 +12,4 @@ namespace cs_creature{
     };
 }
 
-
-
 #endif //INHERITANCE_DEMON_H

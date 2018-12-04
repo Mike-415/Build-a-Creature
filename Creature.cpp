@@ -9,10 +9,20 @@ namespace cs_creature{
         hitpoints = 10;
     }
 
+
+
+
+
+
     Creature::Creature(int newStrength, int newHitpoints){
         strength = newStrength;
         hitpoints = newHitpoints;
     }
+
+
+
+
+
 
     int Creature::getDamage() const {
         int damage;
@@ -22,18 +32,39 @@ namespace cs_creature{
         return damage;
     }
 
+
+
+
+
+
     int Creature::getStrength() const{
         return strength;
     }
 
+
+
+
+
+
     int Creature::getHitpoints() const {
         return hitpoints;
     }
+
+
+
+
+
+
     void Creature::setStrength(int newStrength) {
         strength = newStrength;
     }
+
+
+
+
+
+
     void Creature::setHitpoints(int newHitpoints) {
         hitpoints = newHitpoints;
     }
-
 }

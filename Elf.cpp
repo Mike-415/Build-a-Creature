@@ -4,9 +4,20 @@ namespace cs_creature{
     Elf::Elf(){
 
     }
+
+
+
+
+
+
     Elf::Elf(int newStrength, int newHitpoints)
     :Creature(newStrength, newHitpoints){
     }
+
+
+
+
+
 
     int Elf::getDamage() const{
          //Elves inflict double magical damage with a 50% chance
@@ -17,6 +28,11 @@ namespace cs_creature{
          }
         return damage;
     }
+
+
+
+
+
 
     std::string Elf::getSpecies() const{
         return "Elf";

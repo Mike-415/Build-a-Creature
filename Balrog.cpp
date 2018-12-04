@@ -10,9 +10,19 @@ namespace cs_creature{
 
     }
 
+
+
+
+
+
     Balrog::Balrog(int newStrength, int newHitpoints)
             :Demon(newStrength, newHitpoints){
     }
+
+
+
+
+
 
     int Balrog::getDamage() const {
         int damage = Demon::getDamage();
@@ -20,8 +30,12 @@ namespace cs_creature{
         std::cout << "Balrog speed attack inflicts " << additionalDamage << " additional damage points!" << std::endl;
         damage += additionalDamage;
         return damage;
-
     }
+
+
+
+
+
 
     std::string Balrog::getSpecies() const {
         return "Balrog";
