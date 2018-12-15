@@ -1,7 +1,7 @@
 #ifndef INHERITANCE_HUMAN_H
 #define INHERITANCE_HUMAN_H
 #include "Creature.h"
-]
+
 namespace cs_creature{
     class Human: public Creature {
         public:
